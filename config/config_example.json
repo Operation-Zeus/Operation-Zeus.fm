@@ -1,0 +1,6 @@
+{
+  "server": {
+    "domain": "Domain the server is running on",
+    "port": "Port the server runs on"
+  }
+}
