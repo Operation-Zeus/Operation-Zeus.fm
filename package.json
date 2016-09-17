@@ -4,9 +4,13 @@
   "author": "Luop90",
   "license": "GNU3.0",
   "dependencies": {
-
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "jade": "^1.11.0",
+    "moment": "^2.15.0",
+    "mysql": "^2.11.1",
+    "passport": "^0.3.2"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
