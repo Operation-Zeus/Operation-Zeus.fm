@@ -1,13 +1,13 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    ngAnnonate: {
+    ngAnnotate: {
       options: {
         add: true,
       },
       app: {
         files: {
-          'assets/build/js/<%= pkg.name %>.js' : 'assets/src/js/*.js'
+          'assets/build/js/operation-zues.js' : 'assets/src/js/*.js'
         }
       }
     },
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'assets/build/js/<%= pkg.name %>.js' : 'assets/build/js/<%= pkg.name %>.js'
+          'assets/build/js/operation-zues.js' : 'assets/build/js/operation-zues.js'
         }
       }
     },
@@ -29,8 +29,8 @@ module.exports = function (grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'assets/build/js/<%= pkg.name %>.js',
-        dest: 'assets/build/js/<%= pkg.name %>.min.js'
+        src: 'assets/build/js/operation-zues.js',
+        dest: 'assets/build/js/operation-zues.min.js'
       }
     },
     less: {
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
     watch: {
       js: {
         files: ['assets/src/js/*.js'],
-        tasks: ['ngAnnonate', 'babel', 'uglify']
+        tasks: ['ngAnnotate', 'babel', 'uglify']
       },
       css: {
         files: 'assets/src/css/*.less',
