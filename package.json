@@ -12,5 +12,14 @@
     "mysql": "^2.11.1",
     "passport": "^0.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ng-annotate": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^2.0.0"
+  }
 }
