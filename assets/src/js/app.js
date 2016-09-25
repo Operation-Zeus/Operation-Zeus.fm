@@ -5,11 +5,10 @@ angular.module('OperationZeus', [
   'angular-loading-bar'
 ])
 .config(function (cfpLoadingBarProvider) {
+  /* @ngInject */
   cfpLoadingBarProvider.includeSpinner = true;
   cfpLoadingBarProvider.latencyThreshold = 1;
 });
-
-
 
 function getParameterByName(name, url) {
   if (!url) url = window.location.href;
