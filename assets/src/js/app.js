@@ -1,6 +1,6 @@
 angular.module('OperationZeus', [
   'ngMaterial',
-  'ui.route',
+  'ui.router',
   'ngAnimate',
   'angular-loading-bar'
 ])
