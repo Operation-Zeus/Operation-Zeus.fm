@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       },
       app: {
         files: {
-          'assets/build/js/operation-zues.js' : 'assets/src/js/*.js'
+          'assets/build/js/operation-zeus.js' : 'assets/src/js/*.js'
         }
       }
     },
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'assets/build/js/operation-zues.js' : 'assets/build/js/operation-zues.js'
+          'assets/build/js/operation-zeus.js' : 'assets/build/js/operation-zeus.js'
         }
       }
     },
@@ -29,8 +29,8 @@ module.exports = function (grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'assets/build/js/operation-zues.js',
-        dest: 'assets/build/js/operation-zues.min.js'
+        src: 'assets/build/js/operation-zeus.js',
+        dest: 'assets/build/js/operation-zeus.min.js'
       }
     },
     less: {

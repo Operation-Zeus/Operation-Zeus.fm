@@ -1,7 +1,7 @@
 "use strict";
 
 runBlock.$inject = ["$window", "$rootScope", "$location", "$http"];
-MainCtrl.$inject = ["$scope", "$rootScope", "$state"];angular.module('OperationZeus', ['ngMaterial', 'ui.route', 'ngAnimate', 'angular-loading-bar']).config(["cfpLoadingBarProvider", function (cfpLoadingBarProvider) {
+MainCtrl.$inject = ["$scope", "$rootScope", "$state"];angular.module('OperationZeus', ['ngMaterial', 'ui.router', 'ngAnimate', 'angular-loading-bar']).config(["cfpLoadingBarProvider", function (cfpLoadingBarProvider) {
   /* @ngInject */
   cfpLoadingBarProvider.includeSpinner = true;
   cfpLoadingBarProvider.latencyThreshold = 1;
