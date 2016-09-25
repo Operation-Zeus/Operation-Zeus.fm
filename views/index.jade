@@ -3,28 +3,28 @@ html(lang="en" ng-app="OperationZeus" ng-strict-di)
 	head
 		meta(charset="utf-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(name="robots" content="INDEX, FOLLOW")
-    meta(name="author" content="Luop90")
-    meta(name="description" content="A free, open source Podcast Manager from the future")
-    
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(name="robots" content="INDEX, FOLLOW")
+		meta(name="author" content="Luop90")
+		meta(name="description" content="A free, open source Podcast Manager from the future")
+		
 		title(ng-bind-template="{{ $root.titlePage }} | Operation Zeus") Operation Zeus
-    base(href="/")
+		base(href="/")
 
-		link(rel="stylesheet" href="/css/master.css?#{versionHash}" media="screen" title="no title" charset="utf-8")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="screen" title="no title" charset="utf-8" type="text/css")
-    link(rel="icon" href="/img/favicon.ico" type="image/x-ico")
-  body(ng-controller="MainCtrl")
-    include includes/header
-    
-    md-content(ng-if="$root.fullyLoaded" ng-cloak)
-      main(flex)
-        md-content(flex ui-view)
-        
-    article(ng-hide="$root.fullyLoaded")#splash-screen
-      h1 Loading...
-      h4 "Code names are fun" -CGPGrey
-      img(src="/img/preloader-multicolor.gif" alt="Loading...")
-      
-    script(src="/js/vendor.min.js" type="text/javascript" charset="utf-8")
-    script(src="/js/operation-zeus.min.js" type="text/javascript" charset="utf-8")
+		link(rel="stylesheet" href="/css/master.min.css?#{versionHash}" media="screen" title="no title" charset="utf-8")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="screen" title="no title" charset="utf-8" type="text/css")
+		link(rel="icon" href="/img/favicon.ico" type="image/x-ico")
+	body(ng-controller="MainCtrl")
+		include includes/header
+		
+		md-content(ng-if="$root.fullyLoaded" ng-cloak)
+			main(flex)
+			md-content(flex ui-view)
+			
+			article(ng-hide="$root.fullyLoaded")#splash-screen
+			h1 Loading...
+			h4 "Code names are fun" -CGPGrey
+			img(src="/img/preloader-multicolor.gif" alt="Loading...")
+			
+			script(src="/js/vendor.min.js" type="text/javascript" charset="utf-8")
+			script(src="/js/operation-zeus.min.js" type="text/javascript" charset="utf-8")
