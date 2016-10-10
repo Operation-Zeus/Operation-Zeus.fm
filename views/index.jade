@@ -1,5 +1,5 @@
 doctype html
-html(lang="en" ng-app="OperationZeus" ng-strict-di)
+html(lang="en" ng-app="Operation-Zeus" ng-strict-di)
 	head
 		meta(charset="utf-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -17,8 +17,7 @@ html(lang="en" ng-app="OperationZeus" ng-strict-di)
 	body(ng-controller="MainCtrl")
 		include includes/header
 		
-		md-content(ng-if="$root.fullyLoaded" ng-cloak)
-			main(flex)
+		main(flex ng-if="$root.fullyLoaded" ng-cloak)
 			md-content(flex ui-view)
 			
 			article(ng-hide="$root.fullyLoaded")#splash-screen
