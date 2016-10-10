@@ -4,6 +4,7 @@ var User = require('../models/User.js');
 
 module.exports = function (app, passport) {
   app.get('/', index);
+  app.get('/partials/:name', partials);
 };
 
 var index = function (req, res) {
@@ -11,3 +12,7 @@ var index = function (req, res) {
     user: req.user || {}
   });
 };
+
+var partials = function (req, res) {
+  res.render(`partials/${req.params.name}`);
+}
