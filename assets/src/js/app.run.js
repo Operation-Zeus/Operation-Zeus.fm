@@ -1,8 +1,10 @@
 angular
-  .module('OperationZeus')
+  .module('Operation-Zeus')
   .run(runBlock);
 
 /* @ngInject */
-function runBlock($window, $rootScope, $location, $http) {
+function runBlock($window, $rootScope, $location, $http, $state) {
   $rootScope.fullyLoaded = true;
+
+  
 }
