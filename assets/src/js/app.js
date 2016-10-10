@@ -1,8 +1,11 @@
-angular.module('OperationZeus', [
-  'ngMaterial',
+angular.module('Operation-Zeus', [
   'ui.router',
+  'ngAudio',
   'ngAnimate',
-  'angular-loading-bar'
+  'ngMaterial',
+  'ngContextMenu',
+  'ngSanitize',
+  'cfp.hotkeys'
 ])
 .config(function (cfpLoadingBarProvider) {
   /* @ngInject */
