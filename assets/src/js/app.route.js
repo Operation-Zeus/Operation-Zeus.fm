@@ -6,7 +6,8 @@ function routeConfig($stateProvider, $locationProvider) {
       templateUrl: '/partials/home'
     })
     .state('welcome', {
-      url: '/',
       templateUrl: '/partials/welcome'
     });
+
+  $locationProvider.html5Mode(true);
 }
