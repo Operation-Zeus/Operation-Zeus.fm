@@ -1,6 +1,7 @@
-var api = require('../api.js');
+"use strict";
 
-var User = require('../models/User.js');
+let api = require('../api.js');
+let User = require('../models/User.js');
 
 module.exports = function (app, passport) {
   app.get('/', index);

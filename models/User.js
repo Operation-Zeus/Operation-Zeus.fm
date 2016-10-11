@@ -1,5 +1,5 @@
-var api = require('../api.js');
+let api = require('../api.js');
 
-var User = {};
+let User = {};
 
 module.exports = User;

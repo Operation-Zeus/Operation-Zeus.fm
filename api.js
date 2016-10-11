@@ -1,8 +1,10 @@
+"use strict";
+
 const moment = require('moment');
 const colors = require('colors');
 const crypto = require('crypto');
 
-var api = {};
+let api = {};
 
 /**
  * Custom log function, adds colors + tags
@@ -10,8 +12,8 @@ var api = {};
  * @param {STRING} input
  */
 api.log = function (type, input) {
-  var tag = '';
-  var timestamp = api.getCurrentMysqlTime();
+  let tag = '';
+  let timestamp = api.getCurrentMysqlTime();
 
   type = type.toLowerCase();
   switch (type) {
