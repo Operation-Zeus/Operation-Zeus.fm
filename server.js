@@ -16,7 +16,7 @@ let api = require('./api.js');
 let User = require('./models/User.js');
 
 // Setup our config file
-let config = fs.readFileSync('config/config.json');
+let config = JSON.parse(fs.readFileSync('config/config.json'));
 
 let port = config.server.port;
 let domain = config.server.domain;
