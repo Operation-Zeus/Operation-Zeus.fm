@@ -2,9 +2,7 @@
 
 routeConfig.$inject = ["$stateProvider", "$locationProvider"];
 runBlock.$inject = ["$window", "$rootScope", "$location", "$http", "$state", "$cookies"];
-MainCtrl.$inject = ["$scope", "$rootScope", "$state"];angular.module('Operation-Zeus', ['ui.router',
-// 'ngAudio',
-'ngAnimate', 'ngMaterial', 'ngContextMenu', 'ngSanitize', 'ngCookies', 'angular-loading-bar', 'cfp.hotkeys']).config(routeConfig).config(["cfpLoadingBarProvider", function (cfpLoadingBarProvider) {
+MainCtrl.$inject = ["$scope", "$rootScope", "$state"];angular.module('Operation-Zeus', ['ui.router', 'ngAudio', 'ngAnimate', 'ngMaterial', 'ngContextMenu', 'ngSanitize', 'ngCookies', 'angular-loading-bar', 'cfp.hotkeys']).config(routeConfig).config(["cfpLoadingBarProvider", function (cfpLoadingBarProvider) {
   /* @ngInject */
   cfpLoadingBarProvider.includeSpinner = true;
   cfpLoadingBarProvider.latencyThreshold = 1;

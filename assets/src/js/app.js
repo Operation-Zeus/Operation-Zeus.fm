@@ -5,8 +5,11 @@ angular.module('Operation-Zeus', [
   'ngMaterial',
   'ngContextMenu',
   'ngSanitize',
+  'ngCookies',
+  'angular-loading-bar',
   'cfp.hotkeys'
 ])
+.config(routeConfig)
 .config(function (cfpLoadingBarProvider) {
   /* @ngInject */
   cfpLoadingBarProvider.includeSpinner = true;
