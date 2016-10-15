@@ -6,6 +6,9 @@ let User = require('../models/User.js');
 module.exports = function (app, passport) {
   app.get('/', index);
   app.get('/partials/:name', partials);
+
+  // HTML5 history
+  app.get('*', index);
 };
 
 var index = function (req, res) {
