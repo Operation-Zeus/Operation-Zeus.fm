@@ -2,7 +2,7 @@
   "name": "Operation-Zeus.fm",
   "description": "The website for the podcast manager",
   "author": "Luop90",
-  "license": "GNU-3.0",
+  "license": "GPL-3.0",
   "repository": {
     "type": "GIT"
   },
