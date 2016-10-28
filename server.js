@@ -1,8 +1,6 @@
 "use strict";
 
-/**
- * Include modules
- */
+// Include modules
 const express = require('express');
 const mysql = require('mysql');
 const fs = require('fs');
@@ -11,6 +9,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const moment = require('moment');
+const mysql = require('mysql');
 
 let app = express();
 let api = require('./api.js');
@@ -22,7 +21,16 @@ let config = JSON.parse(fs.readFileSync('config/config.json'));
 let port = config.server.port;
 let domain = config.server.domain;
 
-/* Passport setup */
+// MySQL setup
+let connection = mysql.createConnection({
+  host: config.mysql.host,
+  port: config.mysql.port,
+  user: config.mysql.username,
+  password: config.mysql.password,
+  database: config.mysql.database
+});
+
+// Passport setup
 passport.serializeUser(function (user, done) {
   done(null, user);
 });
@@ -67,4 +75,13 @@ require('./routes/routes.js')(app, passport);
 
 app.listen(port, () => {
   api.log('system', `Node server listening on ${port}`);
+});
+
+connection.connect((err) => {
+  if (err) {
+    throw err;
+  }
+
+  api.log('database', 'Initial connection to database established.');
+  api.setConnectionLink(connection);
 });

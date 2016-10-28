@@ -3,5 +3,12 @@
     "domain": "Domain the server is running on",
     "port": "Port the server runs on",
     "cookieSecret": "Secret (salt) to our cookie hashes"
+  },
+  "mysql": {
+    "host": "URL of the host",
+    "port": "Poort of the host",
+    "username": "Username for DB",
+    "password": "Password for DB",
+    "database": "Name of the database"
   }
 }
