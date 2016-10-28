@@ -1,6 +1,7 @@
 {
   "server": {
     "domain": "Domain the server is running on",
-    "port": "Port the server runs on"
+    "port": "Port the server runs on",
+    "cookieSecret": "Secret (salt) to our cookie hashes"
   }
 }
