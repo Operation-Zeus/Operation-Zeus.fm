@@ -4,7 +4,13 @@ angular
 
 /* @ngInject */
 function runBlock($window, $rootScope, $location, $http, $state, $cookies) {
-  // TODO: Show a welcome page if they've never been here before
+  if ($cookies.get('seenWelcome') !== 1) {
+    $location.url('/welcome');
+
+    $cookies.put('seenWelcome', 1, {
+      expires: new Date(1e13) // A very long time (Sat Nov 20 2286 10:46:40) 
+    });
+  }
 
   $rootScope.fullyLoaded = true;
 }
