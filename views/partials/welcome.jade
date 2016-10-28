@@ -1,2 +1,90 @@
-article(flex)
-  h1 This is the welcome page
+article(layout="column" layout-align="center center" flex)#welcome-page
+  header
+    md-toolbar
+      .md-toolbar-tools
+        md-button(aria-label="Operation Zeus") Operation Zeus
+        
+        span(flex)
+        md-button(aria-label="Features" href="#welcome-features") Features
+        md-button(aria-label="About" href="#welcome-about") About
+        md-button(aria-label="Download" href="#welcome-download") Get Started
+   
+  section#welcome-main
+    img(src="/img/zeus.jpg" alt="Operation Zeus" style="max-width: 600px;")#main-image
+    h1.md-headline Operation Zeus
+    h5.md-subtitle A free, cross-platform podcast manager from the future.
+  
+  section#welcome-features
+    h1(align="center").md-headline Fully featured, right out of the box
+    
+    section#feature-wrapper
+      md-card
+        md-card-image
+          .feature-circle
+            md-icon(md-font-library="material-icons") devices_other
+        md-card-title
+          md-card-title-text
+            h3.md-headline Cross-platform
+        md-card-content
+          p.md-body
+            | Operation Zeus works across all operating systems. It is available on OS X, Windows, Linux, Andriod, and iOS.
+
+      md-card
+        md-card-image
+          .feature-circle
+            md-icon(md-font-library="material-icons") sync
+        md-card-title
+          md-card-title-text
+            h3.md-headline Online Sync
+        md-card-content
+          p.md-body
+            | All podcasts automatically sync up. No matter where you are, all of your podcasts are with you.
+
+      md-card
+        md-card-image
+          .feature-circle
+            md-icon(md-font-library="material-icons") brightness_low
+        md-card-title
+          md-card-title-text
+            h3.md-headline Low-Contrast Themes
+        md-card-content
+          p.md-body
+            | Beautiful dark and twilight low-contrast themes designed to make your eyes not bleed.
+            
+      md-card
+        md-card-image
+          .feature-circle
+            md-icon(md-font-library="material-icons") search
+        md-card-title
+          md-card-title-text
+            h3.md-headline Find New Podcasts
+        md-card-content
+          p.md-body
+            | Search through thousands of podcasts to find a new favorite, or add your own (via a RSS feed).
+
+      md-card
+        md-card-image
+          .feature-circle
+            md-icon(md-font-library="material-icons") money_off
+        md-card-title
+          md-card-title-text
+            h3.md-headline Free
+        md-card-content
+          p.md-body
+            | Truly 100% absolutely free. Free as in free beer. No advertisements, no "premium only" features, everything is free.
+            
+      md-card
+        md-card-image
+          .feature-circle
+            md-icon(md-font-library="material-icons") all_inclusive
+        md-card-title
+          md-card-title-text
+            h3.md-headline Open Source
+        md-card-content
+          p.md-body
+            | Operation Zeus is open source. If you'd like to be part of the community, or help improve your favorite podcast manager, find us on <a href="https://github.com/Operation-Zeus" target="_blank">Github</a>
+
+
+  section#welcome-about
+  
+  section#welcome-download
